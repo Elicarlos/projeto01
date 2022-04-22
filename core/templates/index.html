@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <img src="{% static 'images/django.png' %}" alt="">
+
+    <a href="{% url 'contato' %}">Contato</a>
+
+{% for produto in produtos %}
+    <a href="{% url 'produto' produto.id%}">{{produto.descricao}}</a>
+
+{% endfor %}
+
+<button onclick="teste();">Clique-me</button>
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
+
