@@ -2,10 +2,3 @@ python-3.6.6
 
 
 
-echo "# projeto01" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M master
-git remote add origin https://github.com/Elicarlos/projeto01.git
-git push -u origin master
